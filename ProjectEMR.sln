@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEMR", "ProjectEMR\ProjectEMR.csproj", "{09B662A7-7FAB-4B61-871B-2D7FD8CB9B05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEMR.Tests", "ProjectEMR.Tests\ProjectEMR.Tests.csproj", "{F0124961-1FFF-44BF-B9BA-310B4DE8EA26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09B662A7-7FAB-4B61-871B-2D7FD8CB9B05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09B662A7-7FAB-4B61-871B-2D7FD8CB9B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09B662A7-7FAB-4B61-871B-2D7FD8CB9B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09B662A7-7FAB-4B61-871B-2D7FD8CB9B05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0124961-1FFF-44BF-B9BA-310B4DE8EA26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0124961-1FFF-44BF-B9BA-310B4DE8EA26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0124961-1FFF-44BF-B9BA-310B4DE8EA26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0124961-1FFF-44BF-B9BA-310B4DE8EA26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EEC94E12-7176-4B4F-BE25-393F70430702}
+	EndGlobalSection
+EndGlobal
