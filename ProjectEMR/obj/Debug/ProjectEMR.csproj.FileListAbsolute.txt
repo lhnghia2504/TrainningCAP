@@ -105,3 +105,9 @@ D:\CAP\ProjectEMR\ProjectEMR\obj\Debug\ProjectEMR.csproj.AssemblyReference.cache
 D:\CAP\ProjectEMR\ProjectEMR\obj\Debug\ProjectEMR.csproj.CoreCompileInputs.cache
 D:\CAP\ProjectEMR\ProjectEMR\obj\Debug\ProjectEMR.dll
 D:\CAP\ProjectEMR\ProjectEMR\obj\Debug\ProjectEMR.pdb
+D:\CAP\ProjectEMR\ProjectEMR\bin\ExcelDataReader.DataSet.dll
+D:\CAP\ProjectEMR\ProjectEMR\bin\ExcelDataReader.dll
+D:\CAP\ProjectEMR\ProjectEMR\bin\ExcelDataReader.pdb
+D:\CAP\ProjectEMR\ProjectEMR\bin\ExcelDataReader.xml
+D:\CAP\ProjectEMR\ProjectEMR\bin\ExcelDataReader.DataSet.pdb
+D:\CAP\ProjectEMR\ProjectEMR\bin\ExcelDataReader.DataSet.xml

@@ -55,3 +55,9 @@ D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
 D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\Antlr3.Runtime.dll
 D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
 D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\Antlr3.Runtime.pdb
+D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\ExcelDataReader.dll
+D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\ExcelDataReader.DataSet.dll
+D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\ExcelDataReader.pdb
+D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\ExcelDataReader.xml
+D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\ExcelDataReader.DataSet.pdb
+D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\ExcelDataReader.DataSet.xml
