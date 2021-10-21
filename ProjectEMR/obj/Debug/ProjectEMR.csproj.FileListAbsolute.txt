@@ -111,3 +111,8 @@ D:\CAP\ProjectEMR\ProjectEMR\bin\ExcelDataReader.pdb
 D:\CAP\ProjectEMR\ProjectEMR\bin\ExcelDataReader.xml
 D:\CAP\ProjectEMR\ProjectEMR\bin\ExcelDataReader.DataSet.pdb
 D:\CAP\ProjectEMR\ProjectEMR\bin\ExcelDataReader.DataSet.xml
+D:\CAP\ProjectEMR\ProjectEMR\bin\EPPlus.dll
+D:\CAP\ProjectEMR\ProjectEMR\bin\Microsoft.IO.RecyclableMemoryStream.dll
+D:\CAP\ProjectEMR\ProjectEMR\bin\System.ComponentModel.Annotations.dll
+D:\CAP\ProjectEMR\ProjectEMR\bin\EPPlus.xml
+D:\CAP\ProjectEMR\ProjectEMR\bin\Microsoft.IO.RecyclableMemoryStream.xml

@@ -9,7 +9,9 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI;
 using ExcelDataReader;
+using OfficeOpenXml;
 using ProjectEMR.Models;
 
 namespace ProjectEMR.Areas.Admin.Controllers
@@ -38,7 +40,7 @@ namespace ProjectEMR.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult ImportExcel(HttpPostedFileBase[] uploads)
+        public ActionResult ImportExcel(HttpPostedFileBase[] uploads)          
         {
             DataTable dt = new DataTable();
           
@@ -148,8 +150,44 @@ namespace ProjectEMR.Areas.Admin.Controllers
             return RedirectToAction("Index");
 
         }
-        // GET: Admin/Bacsis/Details/5
-        public ActionResult Details(int? id)
+
+
+        public ActionResult Export()
+        {
+            //var Bacsi = db.Bacsis.ToList();
+            var Bacsi = (from bac in db.Bacsis
+                         select new
+                         {
+                             id = bac.id,
+                             name = bac.Name,
+                             descriptions = bac.Description,
+                             departmet = bac.Department,
+                         });
+
+            using (ExcelPackage pck = new ExcelPackage())
+            {
+                ExcelWorksheet ws = pck.Workbook.Worksheets.Add("Bacsis");
+                ws.Cells["A1"].LoadFromCollection(Bacsi, true);
+                // Load your collection "accounts"
+
+                Byte[] fileBytes = pck.GetAsByteArray();
+                Response.Clear();
+                Response.Buffer = true;
+                Response.AddHeader("content-disposition", "attachment;filename=Bacsis.doc");
+                // Replace filename with your custom Excel-sheet name.
+
+                Response.Charset = "";
+                Response.ContentType = "application/vnd.ms-excel";
+                StringWriter sw = new StringWriter();
+                Response.BinaryWrite(fileBytes);
+                Response.End();
+            }
+
+            return RedirectToAction("Index");
+        }
+
+    // GET: Admin/Bacsis/Details/5
+    public ActionResult Details(int? id)
         {
             if (id == null)
             {

@@ -80,32 +80,45 @@
 
 
     </div>
-    if (ViewBag.DT != null)
-    {
-        <table id="table1" class="table table-bordered table-hover">
-            <thead>
-                <tr>
-                    @foreach (DataColumn col in ViewBag.DT.Columns)
-                    {
-                        <th>@col.ColumnName</th>
-                    }
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (DataRow row in ViewBag.DT.Rows)
-                {
+    @*if (ViewBag.DT != null)
+        {
+            <table id="table1" class="table table-bordered table-hover">
+                <thead>
                     <tr>
                         @foreach (DataColumn col in ViewBag.DT.Columns)
                         {
-                            <td>@row[col.ColumnName]</td>
+                            <th>@col.ColumnName</th>
                         }
                     </tr>
-                }
-            </tbody>
-        </table>
-    }
+                </thead>
+                <tbody>
+                    @foreach (DataRow row in ViewBag.DT.Rows)
+                    {
+                        <tr>
+                            @foreach (DataColumn col in ViewBag.DT.Columns)
+                            {
+                                <td>@row[col.ColumnName]</td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }*@
+}
+
+@using (Html.BeginForm("Export", "Bacsis"))
+{
+    <table>
+        <tr>
+            <td>Export Data : </td>
+            <td>
+                <input type="submit" name="Export" value="Export to Excel" />
+            </td>
+        </tr>
+    </table>
 }
 <p>
+
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">

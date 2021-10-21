@@ -61,3 +61,7 @@ D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\ExcelDataReader.pdb
 D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\ExcelDataReader.xml
 D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\ExcelDataReader.DataSet.pdb
 D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\ExcelDataReader.DataSet.xml
+D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\EPPlus.dll
+D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\EPPlus.xml
+D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
