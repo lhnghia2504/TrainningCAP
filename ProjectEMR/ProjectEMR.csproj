@@ -1829,6 +1829,7 @@
     <Content Include="Areas\Admin\assets\vendors\tinymce\tinymce.min.js" />
     <Content Include="Areas\Admin\assets\vendors\toastify\toastify.css" />
     <Content Include="Areas\Admin\assets\vendors\toastify\toastify.js" />
+    <Content Include="Areas\Admin\Views\Shared\form-element-input-group.html" />
     <Content Include="Areas\Admin\Views\Shared\table-datatable.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
