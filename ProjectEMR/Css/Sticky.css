@@ -1,0 +1,46 @@
+﻿body {
+    height: 3000px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+header {
+    height: 100px;
+    background-color: red;
+    z-index: 9999; 
+    
+}
+
+nav .ListNav {
+    display: flex;
+    list-style: none;
+}
+
+.container{
+    z-index: 1;
+}
+
+.ListNav a{
+    background-color: green;
+    color: white;
+    padding: 20px
+
+}
+
+.sticky{
+    position: fixed;
+    width: 100%;
+    animation: fadeIn 3s linear;
+
+}
+
+@keyframes fadeIn{
+    from{
+        transform: translateY(-100%)
+    }
+    to {
+        transform: translateY(0)
+    }
+}
+
