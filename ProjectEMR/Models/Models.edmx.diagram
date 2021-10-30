@@ -5,10 +5,10 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="ec88ce15f31a44508bb26fa609e5dbcf" Name="Diagram1">
-        <EntityTypeShape EntityType="projectcapModel.Bacsi" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
         <EntityTypeShape EntityType="projectcapModel.BenhNhan" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
         <EntityTypeShape EntityType="projectcapModel.sysdiagram" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
-        <AssociationConnector Association="projectcapModel.FK_BenhNhan_Bacsi" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="projectcapModel.Bacsi" Width="1.5" PointX="0.75" PointY="0.75" />
+        <AssociationConnector Association="projectcapModel.FK_BenhNhan_Bacsi" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

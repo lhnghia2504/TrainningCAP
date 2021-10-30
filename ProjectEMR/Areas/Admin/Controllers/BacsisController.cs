@@ -212,7 +212,7 @@ namespace ProjectEMR.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Bacsi bacsi)
+        public ActionResult Create(HttpPostedFileBase image, Bacsi bacsi)
         {
             if (ModelState.IsValid)
             {

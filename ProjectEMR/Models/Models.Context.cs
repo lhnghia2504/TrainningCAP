@@ -25,8 +25,8 @@ namespace ProjectEMR.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Bacsi> Bacsis { get; set; }
         public virtual DbSet<BenhNhan> BenhNhans { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<Bacsi> Bacsis { get; set; }
     }
 }

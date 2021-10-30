@@ -1,15 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="projectcapModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="Bacsi">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Department" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="BenhNhans" Relationship="Self.FK_BenhNhan_Bacsi" FromRole="Bacsi" ToRole="BenhNhan" />
-  </EntityType>
   <EntityType Name="BenhNhan">
     <Key>
       <PropertyRef Name="ID" />
@@ -18,7 +8,7 @@
     <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Bacsi_ID" Type="Int32" />
     <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="Bacsi" Relationship="Self.FK_BenhNhan_Bacsi" FromRole="BenhNhan" ToRole="Bacsi" />
+    <NavigationProperty Name="Bacsi" Relationship="projectcapModel.FK_BenhNhan_Bacsi" FromRole="BenhNhan" ToRole="Bacsi" />
   </EntityType>
   <EntityType Name="sysdiagram">
     <Key>
@@ -30,9 +20,29 @@
     <Property Name="version" Type="Int32" />
     <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
+  <EntityContainer Name="projectcapEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BenhNhans" EntityType="Self.BenhNhan" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Bacsis" EntityType="projectcapModel.Bacsi" />
+    <AssociationSet Name="FK_BenhNhan_Bacsi" Association="projectcapModel.FK_BenhNhan_Bacsi">
+      <End Role="Bacsi" EntitySet="Bacsis" />
+      <End Role="BenhNhan" EntitySet="BenhNhans" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Bacsi">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Department" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="BenhNhans" Relationship="projectcapModel.FK_BenhNhan_Bacsi" FromRole="Bacsi" ToRole="BenhNhan" />
+  </EntityType>
   <Association Name="FK_BenhNhan_Bacsi">
-    <End Role="Bacsi" Type="Self.Bacsi" Multiplicity="0..1" />
-    <End Role="BenhNhan" Type="Self.BenhNhan" Multiplicity="*" />
+    <End Type="projectcapModel.Bacsi" Role="Bacsi" Multiplicity="0..1" />
+    <End Type="projectcapModel.BenhNhan" Role="BenhNhan" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Bacsi">
         <PropertyRef Name="id" />
@@ -42,13 +52,4 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="projectcapEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Bacsis" EntityType="Self.Bacsi" />
-    <EntitySet Name="BenhNhans" EntityType="Self.BenhNhan" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
-    <AssociationSet Name="FK_BenhNhan_Bacsi" Association="Self.FK_BenhNhan_Bacsi">
-      <End Role="Bacsi" EntitySet="Bacsis" />
-      <End Role="BenhNhan" EntitySet="BenhNhans" />
-    </AssociationSet>
-  </EntityContainer>
 </Schema>
