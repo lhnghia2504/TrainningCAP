@@ -1,0 +1,11 @@
+﻿body {
+}
+
+.avataBacsi{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+    object-position: bottom;
+
+}

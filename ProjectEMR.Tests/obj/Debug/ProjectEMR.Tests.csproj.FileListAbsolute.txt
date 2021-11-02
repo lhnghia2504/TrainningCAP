@@ -65,3 +65,7 @@ D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\EPPlus.dll
 D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
 D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\EPPlus.xml
 D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\CloudinaryDotNet.dll
+D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\System.Text.Encodings.Web.dll
+D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\CloudinaryDotNet.xml
+D:\CAP\ProjectEMR\ProjectEMR.Tests\bin\Debug\System.Text.Encodings.Web.xml
