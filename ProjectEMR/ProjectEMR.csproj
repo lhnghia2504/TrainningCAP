@@ -287,6 +287,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Admin\assets\css\app.css" />
+    <Content Include="Areas\Admin\assets\css\Bacsicss.css" />
     <Content Include="Areas\Admin\assets\css\bootstrap.css" />
     <Content Include="Areas\Admin\assets\css\pages\auth.css" />
     <Content Include="Areas\Admin\assets\css\pages\chat.css" />
@@ -2041,6 +2042,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="ImageBacsis\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
