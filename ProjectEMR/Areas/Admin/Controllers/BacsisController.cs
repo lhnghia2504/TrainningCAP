@@ -290,13 +290,14 @@ namespace ProjectEMR.Areas.Admin.Controllers
 
         // POST: Admin/Bacsis/Delete/5
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
             Bacsi bacsi = db.Bacsis.Find(id);
             db.Bacsis.Remove(bacsi);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            //return RedirectToAction("Index");
+            return Json(new { success = true });
         }
 
         protected override void Dispose(bool disposing)

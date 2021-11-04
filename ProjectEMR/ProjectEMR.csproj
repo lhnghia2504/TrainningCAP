@@ -1889,6 +1889,7 @@
     <Content Include="Areas\Admin\assets\vendors\toastify\toastify.css" />
     <Content Include="Areas\Admin\assets\vendors\toastify\toastify.js" />
     <Content Include="Areas\Admin\Views\Shared\component-button.html" />
+    <Content Include="Areas\Admin\Views\Shared\extra-component-sweetalert.html" />
     <Content Include="Areas\Admin\Views\Shared\form-element-input-group.html" />
     <Content Include="Areas\Admin\Views\Shared\table-datatable.html" />
     <Content Include="Content\bootstrap-theme.css" />
