@@ -6,7 +6,12 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <link rel="stylesheet " href="@Url.Content("~/Css/Sticky.css")"/>
+
+    <link href= "@Url.Content("~/Css/style.css")" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet " href="@Url.Content("~/Css/Sticky.css")" />
+
+
 </head>
 <body>
     @*<div class="navbar navbar-inverse navbar-fixed-top">
@@ -30,19 +35,19 @@
         </div>
     </div>*@
     <header id="header">
-        <nav>
-            <ul class="ListNav">
-                <li>
-                    <a href="@Url.Action("Index", "home")">Home</a>
-                </li>
-                <li>
-                    <a href="@Url.Action("About", "home")">About</a>
-                </li>
-                <li>
-                    <a href="@Url.Action("Contact", "home")">Contact</a>
-                </li>
-            </ul>
-        </nav>
+    <nav>
+        <ul class="ListNav">
+            <li>
+                <a href="@Url.Action("Index", "home")">Home</a>
+            </li>
+            <li>
+                <a href="@Url.Action("About", "home")">About</a>
+            </li>
+            <li>
+                <a href="@Url.Action("Contact", "home")">Contact</a>
+            </li>
+        </ul>
+    </nav>
     </header>
     <div class="container body-content">
         @RenderBody()
@@ -54,12 +59,14 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         var header = document.getElementById("header");
         window.addEventListener("scroll", function (e) {
-                header.classList.toggle('sticky', window.scrollY > 500);
+            header.classList.toggle('sticky', window.scrollY > 500);
         })
     </script>
     @RenderSection("scripts", required: false)
-</body>
+    </body>
 </html>
